@@ -12,6 +12,8 @@ conda activate SGUser
 python sg_repl.py out.xlsx 
 ```
 
+Make sure to type **exit** to exit  gracefully with the output formatted.
+
 ## Usage
 Scaffold graph as a very simple syntax which uses reverse polish notation to evaluation expressions. 
 Expressions have a simple syntax
@@ -63,5 +65,9 @@ By default, and currently is not changeable, the first result of the prior run i
 used to continue the chain of execution. At the enb of running, you will get a nice
 output document which contains pictures of everything you did.
 
+More analysis of this case shows the first command SCAFFOLD is run via an algorithm.
+Next the transformer model is quiered to find some superstructures. Those structures 
+are checked if they are valid (there are good algorithms for checking validity and correctness).
+Then the first smile string is taken and molecules which have that scaffold are generated. 
 
 
